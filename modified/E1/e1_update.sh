@@ -49,7 +49,7 @@ model=""
 #
 # Version and md5sum
 #
-VERSION="4.0.1_0001_3.3.9_0008"
+VERSION="3.1.6_0001"
 BOOT_MD5SUM=""
 COOR_MD5SUM="177fff18bd6e00d45b31681cf06254ad"
 KERNEL_MD5SUM="690c649a576ffa920839c4796ffd1b8d"
@@ -347,7 +347,7 @@ update_get_packages()
     fi
 
     if [ "x${ROOTFS_MD5SUM}" != "x" ]; then
-        /tmp/curl -s -k -L -o /tmp/rootfs.sqfs https://raw.githubusercontent.com/niceboygithub/AqaraCameraHubfw/main/modified/E1/${VERSION}/rootfs_${VERSION}_modified.sqfs
+        /tmp/curl -s -k -L -o /tmp/rootfs.sqfs https://raw.githubusercontent.com/niceboygithub/AqaraCameraHubfw/main/original/E1/${VERSION}/rootfs_${VERSION}_modified.sqfs
         [ "$(md5sum /tmp/rootfs.sqfs)" != "${ROOTFS_MD5SUM}  /tmp/rootfs.sqfs" ] && return 1
     fi
 

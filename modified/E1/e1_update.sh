@@ -28,13 +28,13 @@ OPTIONS="-h;-u"
 # -a: AIOT.
 # -m: MIOT.
 #
-PLATFORMS="-a;-m"
+PLATFORMS="-m"
 
 #
 # Default platform.
 # Must in aiot;miot.
 #
-DEFAULT_PLATFORM="aiot"
+DEFAULT_PLATFORM="miot"
 
 #
 # Product model, support list: AH_E1
@@ -43,7 +43,7 @@ DEFAULT_PLATFORM="aiot"
 #
 # note: default is unknow.
 #
-model=""
+model="AH_E1"
 
 
 #
